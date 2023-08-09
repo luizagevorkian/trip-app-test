@@ -4,4 +4,7 @@
 
  To run from the console:
 >cd my-app-trip
+
+
+
 >npm start
