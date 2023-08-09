@@ -1,0 +1,85 @@
+.body-box {
+  margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+}
+
+.trip-cards {
+  max-width: calc(100vw - 70px);
+  width: 100%;
+  position: relative;
+}
+
+.trip-cards i {
+  height: 50px;
+  width: 50px;
+  background: #908a8a;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.trip-cards i:first-child {
+  left: -22px;
+}
+
+.trip-cards i:last-child {
+  right: -22px;
+}
+
+.carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 5) - 30px);
+  gap: 30px;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+/* .carousel.dragging {
+  cursor: grab;
+  user-select: none;
+} */
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 1600px) {
+  .carousel {
+    grid-auto-columns: calc((100% / 4) - 30px);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel {
+    grid-auto-columns: calc((100% / 3) - 30px);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .carousel {
+    grid-auto-columns: calc((100% / 2) - 30px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .body-box {
+    margin-top: 25px;
+  }
+}

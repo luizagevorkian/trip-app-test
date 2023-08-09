@@ -1,0 +1,8 @@
+.mainpage {
+    padding: 35px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: calc(100vh - 70px);
+  }
+  

@@ -1,0 +1,36 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  transition: background-color 1s ease-in-out;
+}
+
+.card:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card-title {
+  display: flex;
+  flex-grow: 1;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.city {
+  margin-bottom: 15px;
+  font-weight: 500;
+}

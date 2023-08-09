@@ -1,4 +1,4 @@
-export const cities = {
+export const trips = {
     paris: "Paris",
     vienna: "Vienna",
     amsterdam: "Amsterdam",
